@@ -66,6 +66,6 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 ## 👨‍💻 Author
 **Sahil (sahil1925m)**  
 *Internship Assignment Submission*
-- [LinkedIn Profile](https://linkedin.com/in/yourprofile)
+- [LinkedIn Profile](https://www.linkedin.com/in/sahil-rajak-1b24072b2)
 - [GitHub Profile](https://github.com/sahil1925m)
-- [Portfolio Website](#)
+- [Portfolio Website](https://sahil-portfo.vercel.app/)
