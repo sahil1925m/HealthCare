@@ -3,7 +3,7 @@
 Welcome to the **CareConnect** repository! This web application was built as an internship assignment to provide a comprehensive, digital-first support platform for healthcare Non-Governmental Organizations (NGOs). It streamlines patient support, volunteer registration, and general inquiries, while introducing an automated FAQ system to handle common questions.
 
 ## 🚀 Live Demo
-*(Insert Live Demo Link Here)*
+[https://health-care-seven-xi.vercel.app/](https://health-care-seven-xi.vercel.app/)
 
 ## 🛠️ Tech Stack
 This project is built using modern web development technologies to ensure performance, responsiveness, and a smooth user experience:
@@ -42,7 +42,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/healthcare-ngo-app.git
+   git clone https://github.com/sahil1925m/HealthCare.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -68,5 +68,5 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 **[Your Name / Username]**  
 *Internship Assignment Submission*
 - [LinkedIn Profile](https://linkedin.com/in/yourprofile)
-- [GitHub Profile](https://github.com/yourusername)
+- [GitHub Profile](https://github.com/sahil1925m)
 - [Portfolio Website](#)
