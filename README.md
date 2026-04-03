@@ -59,13 +59,12 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 5. Open your browser and visit `http://localhost:5173` (or the port specified in your terminal).
 
 ## 📸 Screenshots
-*(Insert Screenshots of Home Page, Forms, and MediBot Here)*
 - **Home Page**
 - **Volunteer Form**
 - **MediBot in Action**
 
 ## 👨‍💻 Author
-**[Your Name / Username]**  
+**Sahil (sahil1925m)**  
 *Internship Assignment Submission*
 - [LinkedIn Profile](https://linkedin.com/in/yourprofile)
 - [GitHub Profile](https://github.com/sahil1925m)
