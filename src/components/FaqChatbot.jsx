@@ -4,17 +4,32 @@ import { MessageCircle, X, Send, User, Bot } from 'lucide-react';
 const getBotResponse = (input) => {
   const lowerInput = input.toLowerCase();
   
-  if (lowerInput.match(/\b(register|patient|appointment|sign up|enroll)\b/)) {
-    return "To register as a patient or book an appointment, please visit our Patient Support page and fill out the registration form. Bring a valid ID for your first visit.";
+  // FAQ: Are your medical camps free?
+  if (lowerInput.match(/(camp|camps)/)) {
+    return "All basic checkups and standard medications at our targeted medical camps are 100% free of charge for underprivileged communities.";
   }
-  if (lowerInput.match(/\b(volunteer|join|help out|opportunity)\b/)) {
-    return "We love volunteers! You can join our team by filling out the Volunteer Registration form on our Volunteer page.";
+
+  // FAQ: Do you accept medicine donations?
+  if (lowerInput.match(/(medicine|madicine|pill|drug|sealed)/)) {
+    return "Yes, we accept unexpired, sealed medicines. Please drop them off at our headquarters or mail them to our address.";
+  }
+
+  // FAQ: Can I volunteer if I don't have a medical background?
+  if (lowerInput.match(/(volunteer|background|join|logistics|event)/)) {
+    return "Absolutely! We welcome volunteers without a medical background. We need assistance with logistics, event organization, communication, and more.";
+  }
+
+  // FAQ: How can I apply for free medical assistance?
+  if (lowerInput.match(/(apply|assistance|register|patient|appointment|intake|free)/)) {
+    return "Navigate to the Patient Support section and fill out our intake form. Our team will contact you within 48 hours for an assessment.";
+  }
+
+  // General Questions
+  if (lowerInput.match(/(donate|donation|fund|contribute|give|support)/)) {
+    return "Thank you for your generosity! You can donate funds via our Contact page, or bring sealed medicines to our headquarters.";
   }
   if (lowerInput.match(/\b(service|services|offer|treat|care|checkup|specialties)\b/)) {
     return "We offer a variety of services including general checkups, maternity care, pediatric services, vaccinations, and 24/7 emergency care.";
-  }
-  if (lowerInput.match(/\b(donate|money|fund|contribute|give|support)\b/)) {
-    return "Thank you for your generosity! You can make a difference by donating via our secure online portal on the Contact page.";
   }
   if (lowerInput.match(/\b(contact|location|address|where|phone|email|reach)\b/)) {
     return "You can find us at 123 Health Ave, Wellness City. Reach us at (555) 123-4567 or help@healthngo.org.";
@@ -76,8 +91,11 @@ const FaqChatbot = () => {
       </button>
 
       {/* Chat Window */}
-      {isOpen && (
-        <div className="fixed bottom-24 right-6 w-80 sm:w-96 bg-white shadow-2xl rounded-2xl border border-gray-200 flex flex-col z-50 overflow-hidden transform transition-all duration-300 ease-in-out">
+      <div 
+        className={`fixed bottom-24 right-6 w-80 sm:w-96 bg-white shadow-2xl rounded-2xl border border-gray-200 flex flex-col z-50 overflow-hidden transform transition-all duration-300 ease-out origin-bottom-right ${
+          isOpen ? 'scale-100 opacity-100 translate-y-0' : 'scale-95 opacity-0 translate-y-4 pointer-events-none'
+        }`}
+      >
           
           {/* Header */}
           <div className="bg-gradient-to-r from-blue-600 to-blue-700 p-4 text-white flex items-center justify-between shadow-md">
@@ -150,7 +168,6 @@ const FaqChatbot = () => {
             </form>
           </div>
         </div>
-      )}
     </>
   );
 };
